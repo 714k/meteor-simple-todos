@@ -1,0 +1,150 @@
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+ 
+  font-size: 14px;
+}
+ 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+ 
+header {
+  background: #de4f4f;
+  color: white;
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+ 
+#login-buttons {
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+#login-buttons a{
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+#login-dropdown-list{
+	top: 0;
+	right: 0;
+	left: auto;
+}
+ 
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+label{
+	display: block;
+	float: left;
+	width: 97.5%;
+	padding: 1em 0 1em 2.5%;
+	background-color: #2b2e39;
+	color: #dddddd;
+}
+ 
+form {
+  margin: 0.75em 0 0 0;
+  float: left;
+  width: 100%;
+}
+ 
+.new-task input, .new-task input::-webkit-input-placeholder{
+  box-sizing: border-box;
+  padding: 10px;
+  background: transparent;
+  color: #de4f4f;
+  border: none;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: dotted 1px #dddddd
+}
+ 
+.new-task input:focus{
+  outline: 0;
+}
+ 
+ul {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /*background: #f5eaea;*/
+}
+ 
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+ 
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+ 
+li .text {
+  margin-left: 10px;
+}
+ 
+li.checked {
+  color: #888;
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+ 
+header .hide-completed {
+  float: right;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+ 
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
